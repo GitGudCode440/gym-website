@@ -1,27 +1,79 @@
-a {
-    color: #cdcdcd;  
-    text-decoration: none;
-}
+/* Styling for the header */
 
-a:hover {
-    color: #ebebeb
+.wrapper {
+    padding: 0px 8px;
 }
 
 .header {
-    padding: 8px;
-
+    padding: 16px 0px;
+    
     width: 100%;
     height: auto;
+    
+    background-color: var(--black10);
 
-    background-color: #1a1a1a;
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+    border-color: var(--grey32);
 }
 
-.header-nav {
+.header-nav-list {
     display: flex;
     justify-content: space-between;
-    color: #cdcdcd;
 }
 
+.header-nav svg path {
+    fill: var(--white92);
+}
 
+.header-nav svg:hover path {
+    fill: var(--white80)
+}
+    
+/* Styling for the hero */
 
+.hero {
+    
+    min-height: 85vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-image {
+    
+    flex-grow: 2;
+    
+    background-image: url('./assets/man_lifting_dumbbell.jpg');
+    background-size: cover;
+
+   
+        
+}
+
+.hero-banner {
+    
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.hero-banner .black-banner {
+    padding: 16px 0px;
+    min-height: 60%;
+
+    justify-content: center;
+    align-items: flex-end;
+    text-align: end;
+    background-color: var(--black10);
+    color: var(--white92);
+}
+
+.hero-banner .price-info {
+    min-height: 30%;
+    background-color: var(--white80);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
