@@ -4,6 +4,17 @@
     padding: 0px 8px;
 }
 
+.heading-2 {
+    color: var(--white92);
+    text-align: center;
+    font-size: 1.777rem;
+}
+
+.content {
+    color: var(--white92);
+    text-align: center;
+}
+
 .header {
     padding: 16px 0px;
     
@@ -41,17 +52,17 @@
 
 .hero-image {
     
-    flex-grow: 2;
+  flex-grow: 2;
     
-    background-image: url('./assets/man_lifting_dumbbell.jpg');
-    background-size: cover;
-
+  background-image: url('./assets/man_lifting_dumbbell.jpg');
+  background-size: cover;
+	
    
         
 }
 
 .hero-banner {
-    
+    flex-basis: 40%;
     
     display: flex;
     flex-direction: column;
@@ -76,4 +87,5 @@
     align-items: center;
     text-align: center;
 }
+
 
