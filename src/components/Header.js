@@ -1,9 +1,13 @@
-import dumbbellLogo from '../assets/dumbbell_logo.svg'
-import menuIcon from '../assets/menu_icon.svg'
+import { useEffect } from 'react'
+import Menu from './Menu.js'
 
-function Header() {
+function Header({ propClass, toggleMenu }) {
+  useEffect(() => {
+    console.log(toggleMenu)
+  }, [])
+
   return (
-    <header className="header">
+    <header className={propClass}>
       <div className="wrapper">
         <nav className="header-nav">
           <ul className='header-nav-list'>
@@ -15,11 +19,11 @@ function Header() {
               </a>
             </li>
             <li id='menuIcon'>
-              <a href="#">
-                <svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <button style={{backgroundColor : 'var(--black10)', border: '0'}} onClick={toggleMenu}>
+                <svg width="22" height="15" viewBox="0 0 22 15" fill="none" xmlns="http://www.w3.org/2000/svg" >
                   <path fillRule="evenodd" clipRule="evenodd" d="M1.20921 0.183594H20.8416C21.4814 0.183594 22 0.702241 22 1.34202V1.46397C22 2.10375 21.4814 2.6224 20.8416 2.6224H1.20921C0.569429 2.6224 0.0507812 2.10375 0.0507812 1.46397V1.34202C0.0507812 0.702241 0.569429 0.183594 1.20921 0.183594ZM20.8416 6.28061H1.20921C0.569429 6.28061 0.0507812 6.79926 0.0507812 7.43904V7.56098C0.0507812 8.20076 0.569429 8.71941 1.20921 8.71941H20.8416C21.4814 8.71941 22 8.20076 22 7.56098V7.43904C22 6.79926 21.4814 6.28061 20.8416 6.28061ZM20.8416 12.3776H1.20921C0.569429 12.3776 0.0507812 12.8963 0.0507812 13.5361V13.658C0.0507812 14.2978 0.569429 14.8164 1.20921 14.8164H20.8416C21.4814 14.8164 22 14.2978 22 13.658V13.5361C22 12.8963 21.4814 12.3776 20.8416 12.3776Z" fill="#CDCDCD"/>
                 </svg>
-              </a>
+              </button>
             </li>
           </ul>
         </nav>

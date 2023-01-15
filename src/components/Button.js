@@ -1,30 +1,26 @@
 import React from 'react'
 
-function Button({text, title, style }) {
+function Button({text, title, propStyle, onClick }) {
   
 
   return (
     <button
       title={`${title}-btn`}
-      style={{
-        backgroundColor: 'var(--limeGreen)',
-        fontSize: '1.125rem',
-        border: '0px',
-        padding: '16px 32px',
-        cursor : 'pointer',
-        ...style,
-        
-      }}
-      
-      onClick={() => console.log("Lol!")}
+      style={propStyle}
+      className='btn-main'
+      onClick={onClick}
     >
-      {text}
+      <a href='#' style={{
+        color: 'var(--black10)',
+        textDecoration: 'none'
+        }}>{text}</a>
     </button>
   )
 }
 
 Button.defaultProps = {
-  title: 'normal'
+  title: 'normal',
+  propStyle: {}
 }
 
 export default Button
