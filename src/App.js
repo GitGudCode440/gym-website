@@ -14,16 +14,15 @@ import ToTopButton from './components/ToTopButton';
 
 
 function App() {
-  const [showMenu, setShowMenu] = useState(false)
+  const [showMenu, setShowMenu] = useState('preload')
 
   const toggleMenu =  () => {
-    setShowMenu(_prevShowMenu => (!_prevShowMenu))
+    setShowMenu(_prevShowMenu => {
+      return _prevShowMenu == 'show' ? 'hide' : 'show' 
+    })
   }
 
-  useEffect(() => {
-    console.log(showMenu)
-  }, [showMenu])
-
+  
   return (
     <div id='App'>
       <Header propClass='header' toggleMenu={toggleMenu}/>

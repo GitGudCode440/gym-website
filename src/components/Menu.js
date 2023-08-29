@@ -2,7 +2,7 @@ import React from 'react'
 
 function Menu({showMenu}) {
   return (
-    <nav className={showMenu ? `menu-show` : `menu-hide`}>
+    <nav className={`menu ${showMenu}`}>
       <div className="wrapper">
         <ul>
           <li><a href="#">Home</a></li>
