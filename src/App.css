@@ -66,34 +66,61 @@ svg path {
 
 svg:hover path {
     fill: var(--limeGreen);
-} 
+}
 
-.menu-hide {
+/* This keyframes are garbage and i hate them.
+    I will try to find a better solution instead of
+    interpolating between one value with two keyframes.
+ */
+
+@keyframes showMenu {
+    from {transform: translateX(100%)}
+    to {transform: translateX(0%)}
+}
+
+@keyframes hideMenu {
+    from {transform: translateX(0%)}
+    to {transform: translateX(100%)}
+}
+
+
+.menu {
     background-color: var(--black10);
 
     position: fixed;
+    right: 0;
 
     width: 25%;
     height: 100%;
     z-index: 2;
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: end;
+    text-align: end;
     
-    right: 0;
-    
+}
+
+.menu.preload {
     transform: translateX(100%);
 }
 
-.menu-show {
-    background-color: var(--black10);
-
-    position: fixed;
-
-    width: 25%;
-    height: 100%;
-    z-index: 2;
-    
-    right: 0;
-    transform: translateX(0%);
+.menu.hide {
   
+ 
+    transform: translateX(100%);
+
+    animation: hideMenu .3s ease;
+  
+}
+
+.menu.show {
+
+    transform: translateX(0%);
+    
+    animation: showMenu .3s ease;
+    
 }
 
 a {
@@ -292,11 +319,11 @@ a:hover {
     background-image: url("./assets/weightlifts_girl.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 50% 55%;
     
 
-    flex-basis:  50%;
-    height: 200px;
+    flex-basis:  60%;
+    height: 600px;
     
 }
 
