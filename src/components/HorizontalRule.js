@@ -1,6 +1,3 @@
-import React from 'react'
-import { useEffect } from 'react'
-
 function HorizontalRule({margin}) {
   return (
     <div className="wrapper">

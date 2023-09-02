@@ -1,4 +1,3 @@
-import React from 'react'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import Button from './Button'
@@ -20,7 +19,7 @@ function ToTopButton() {
   useEffect(() => {
       window.addEventListener('scroll', update_scroll_position)
       return () => window.removeEventListener('scroll', update_scroll_position)
-    }, [])
+    })
 
 
   return (

@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import Button from './components/Button';
 import Contact from './components/Contact';
 import Header from './components/Header.js';
 import Hero from './components/Hero.js';
@@ -18,7 +17,7 @@ function App() {
 
   const toggleMenu =  () => {
     setShowMenu(_prevShowMenu => {
-      return _prevShowMenu == 'show' ? 'hide' : 'show' 
+      return _prevShowMenu === 'show' ? 'hide' : 'show' 
     })
   }
 

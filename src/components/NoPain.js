@@ -1,6 +1,3 @@
-import React from 'react'
-import image from '../assets/weightlifts_girl.jpg'
-
 function NoPain() {
   return (
 

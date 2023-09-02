@@ -1,8 +1,4 @@
-import React from 'react'
-
 function Button({text, title, propStyle, onClick }) {
-  
-
   return (
     <button
       title={`${title}-btn`}

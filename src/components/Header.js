@@ -1,11 +1,4 @@
-import { useEffect } from 'react'
-import Menu from './Menu.js'
-
 function Header({ propClass, toggleMenu }) {
-  useEffect(() => {
-    console.log(toggleMenu)
-  }, [])
-
   return (
     <header className={propClass}>
       <div className="wrapper">

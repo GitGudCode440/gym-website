@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Menu({showMenu}) {
   return (
     <nav className={`menu ${showMenu}`}>

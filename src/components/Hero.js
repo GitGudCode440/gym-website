@@ -1,7 +1,5 @@
 import React from 'react'
-import { useEffect } from 'react'
 import Button from './Button'
-import Header from './Header'
 
 function Hero() {
   return (
