@@ -3,6 +3,9 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import Button from './Button'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
+
 
 function ToTopButton() {
   let maxScrollHeight = 300
@@ -22,18 +25,20 @@ function ToTopButton() {
 
   return (
     <Button propStyle={{        
-        padding: '1rem',
-        display: showState ? 'block' : 'none',
-        borderRadius: '8px',
-        position: 'fixed',
-        bottom: '16px',
-        right: '16px',
-
-        zIndex: '1'
-      }}
-      text="^"
+      padding: '1rem',
+      display: showState ? 'block' : 'none',
+      borderRadius: '8px',
+      position: 'fixed',
+      bottom: '16px',
+      right: '16px',
+      zIndex: '1'}}
+      
+      text={<FontAwesomeIcon
+        icon={faArrowUp}
+        style={{color: 'black'}}
+      ></FontAwesomeIcon>}
     ></Button>
   )
 }
 
-export default ToTopButton
+export default ToTopButton;
