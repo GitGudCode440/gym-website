@@ -1,4 +1,5 @@
-{
+{ 
+  "homepage": "https://gitgudcode.github.io/gym-website",
   "name": "gym-website",
   "version": "0.1.0",
   "private": true,
