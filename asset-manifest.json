@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/gym-website/static/css/main.6f8d0ec7.css",
+    "main.js": "/gym-website/static/js/main.5fbd7897.js",
+    "static/media/weightlifts_girl.jpg": "/gym-website/static/media/weightlifts_girl.c073a65623f4363aee33.jpg",
+    "static/media/man_lifting_dumbbell.jpg": "/gym-website/static/media/man_lifting_dumbbell.0523d05727e968fa4fda.jpg",
+    "static/media/leg_press_lady_mobile.jpg": "/gym-website/static/media/leg_press_lady_mobile.61e52146d221c57575a8.jpg",
+    "index.html": "/gym-website/index.html",
+    "main.6f8d0ec7.css.map": "/gym-website/static/css/main.6f8d0ec7.css.map",
+    "main.5fbd7897.js.map": "/gym-website/static/js/main.5fbd7897.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f8d0ec7.css",
+    "static/js/main.5fbd7897.js"
+  ]
+}
