@@ -6,7 +6,7 @@ function Button({text, title, propStyle, onClick }) {
       className='btn-main'
       onClick={onClick}
     >
-      <a href='#' style={{
+      <a href='/' style={{
         color: 'var(--black10)',
         textDecoration: 'none'
         }}>{text}</a>

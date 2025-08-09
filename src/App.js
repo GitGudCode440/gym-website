@@ -39,7 +39,7 @@ function App() {
       <div>
         <h2 className='heading-2' style={{padding: '80px 0 16px 0'}}>Programmes</h2>
         <Programmes headingText='Pushup Practice' withText='Maria Hay' timingsText='7:00 A.M. - 8:00 A.M.'></Programmes>
-        <Programmes headingText='Crutches Practice' withText='Johnny Vin Diesel' timingsText='8:00 A.M. - 9:00 A.M.'></Programmes>
+        <Programmes headingText='Plank Practice' withText='John Summerton' timingsText='8:00 A.M. - 9:00 A.M.'></Programmes>
       </div>
 
       <HorizontalRule></HorizontalRule>
